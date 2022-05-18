@@ -1,0 +1,89 @@
+/*-----------------contenido del html referencias--------------------*/
+
+.contenedor-referencias{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+}
+.imagen{
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 15px;
+    
+}
+%auto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.auto1{
+    @extend %auto;
+}
+.auto2{
+    @extend %auto;
+}
+.auto3{
+    @extend %auto;
+}
+.titulo-referencias{
+    padding: 10px;
+   text-align: center;
+   font-size: 22px;
+   background-color: rgba(206, 195, 195, 0.199);
+}
+p {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    color: rgba(0, 0, 0, 0.507);
+}
+.cliente{
+    font-size: 20px;
+}
+.estrellas{
+    font-size: 11px;
+    color: rgba(255, 0, 0, 0.95);
+}
+@media only screen and (min-width:760px){
+    .contenedor-referencias{
+        grid-template-columns: 1fr;
+    }
+    .titulo-referencias{
+       font-size: 30px;
+    }
+    %auto{
+        font-size: 16px;
+    }
+    .imagen{
+        width: 150px;
+        height: 200px;
+        margin: 5px;
+        border-radius: 15px;  
+    }
+}
+@media only screen and (min-width:1080px){
+    .contenedor-referencias{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .titulo-referencias{
+       font-size: 30px;
+    }
+    %auto{
+        font-size: 16px;
+        align-items: flex-start;
+    }
+    .imagen{
+        width: 250px;
+        height: 300px;
+        margin: 5px;
+        border-radius: 15px;  
+    }
+    .estrellas{
+        font-size: 15px;
+    }
+    .cliente{
+        font-size: 24px;
+    }
+}

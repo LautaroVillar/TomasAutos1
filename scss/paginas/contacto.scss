@@ -1,0 +1,92 @@
+/*------------contenido del html Contacto-----------*/
+
+.contenedor-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.titulo-contacto{
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(206, 195, 195, 0.199);
+}
+/*---------------formulario------------------*/
+
+form{
+    background-color:rgba(47, 36, 36, 0.772);
+    color: aliceblue;
+    padding: 1.5rem;
+    margin: 15px;
+    border-radius: 10px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px;
+    font-size: 12px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+} 
+#button{
+    background: rgb(196, 39, 39);
+    color: #fff;
+}
+#button:hover {
+    background-color: red;
+ cursor: pointer;
+}
+.c-icono{
+    display: flex;
+    flex-direction: column;
+
+}
+.icono2{
+    margin: 8px;
+    padding: 4px;
+    font-size: 12px;
+    
+}
+.fa-envelope::before {
+    margin-right: 6px;
+    color: rgb(196, 39, 39);
+    font-size: 16px;
+}
+.fa-location-dot::before, .fa-map-marker-alt::before {
+    margin-right: 6px;
+    color: rgb(196, 39, 39);
+    font-size: 16px;
+}
+.fa-phone::before {
+    margin-right: 6px;
+    color: rgb(196, 39, 39);
+    font-size: 16px;
+}
+/*--------------------mapa----------------------*/
+
+.mapa{
+    display: none;
+}
+@media only screen and (min-width:1080px){
+    .contenedor-contacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        justify-content: center;
+    }
+    .titulo-contacto{
+        font-size: 30px;
+    }
+    form{
+        width: 100%;
+    }
+    .c-icono{
+        margin: 35px;
+    }
+    .mapa{
+        display: block;
+    }
+}

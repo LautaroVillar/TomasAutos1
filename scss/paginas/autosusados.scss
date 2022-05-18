@@ -1,0 +1,26 @@
+/*---------------contenido de html autosusados-------------*/
+
+.titulo-autosusados{
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(206, 195, 195, 0.199);
+}
+.card{
+    width: 14rem;
+}
+@media only screen and (min-width:760px){
+    .titulo-autosusados{
+        font-size: 30px;
+        
+    }
+    .card{
+        width: 14rem;
+    }
+}
+@media only screen and (min-width:1080px){
+    .card{
+        width: 18rem;
+    }
+}

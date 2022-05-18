@@ -1,0 +1,36 @@
+/*-----------------contenido del html noosotros----------------------*/
+
+.contenedor-nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.nosotros{
+    display: flex;
+    justify-content: center;
+}
+.img-nosotros{
+    width: 80%;
+    margin: 10px;
+    border-radius: 10px;
+}
+.titulo-nosotros{
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgba(206, 195, 195, 0.199);
+}
+.p-nosotros{
+    padding: 5px;
+    text-align: start;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+@media only screen and (min-width:760px){
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .titulo-nosotros{
+        font-size: 30px;
+    }
+}

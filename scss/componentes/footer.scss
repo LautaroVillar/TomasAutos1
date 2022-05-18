@@ -1,0 +1,36 @@
+/*-----------contenido del footer---------------*/
+.contenedor-footer{
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    background-color: #353535;
+}
+.p-footer{
+    font-size: 14px;
+    align-items: center;
+    margin: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.s-footer{
+    color: rgb(255, 43, 43);
+}
+.icono{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.icono1{
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+}
+@media only screen and (min-width:760px){
+    .p-footer{
+        font-size: 16px;
+    }
+}
+.icono1{
+    font-size: 24px;
+}

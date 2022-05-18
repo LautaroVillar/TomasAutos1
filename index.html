@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--link para fuente de la letra del body-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+  <!--link para los iconos-->
+  <script src="https://kit.fontawesome.com/0dd7eb61a6.js" crossorigin="anonymous"></script>
+  <!--link de boostratp-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--link del css-->
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Home</title>
+  <meta name="description" content="Autos usados. Encontrá el auto usado que más se adapta a tus necesidades.">  
+  <meta name="keywords" content="Autos usados, venta, compra, financiacion, mantenimiento, consulta"> 
+    <title>Document</title>
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark color-nav">
+    <div class="container-fluid">
+        <img src="img/tomasautos.jpeg" alt="logo"class="navbar-brand logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-menu" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-menu" href="pages/autosusados.html">Autos Usados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-menu" href="pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-menu" href="pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-menu" href="pages/referencias.html">Referencias</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  <div>
+  <img src="img/portada.jpeg" alt="portada"class="portada">
+ </div>
+ <main class="contenedor-home">
+   <div class="compra-venta">
+      <i class="fa-solid fa-car"></i>
+     <h1 class="h1-cuadro">Compra/Venta</h1>
+   </div>
+   <div class="mantenimiento">
+      <i class="fa-solid fa-wrench"></i>
+     <h1 class="h1-cuadro">Mantenimiento</h1>
+   </div>
+   <div class="asesoramiento">
+      <i class="fa-solid fa-user-tie"></i>
+     <h1 class="h1-cuadro">Asesoramiento</h1>
+   </div>
+ </main>
+ <div>
+   <h2 class="titulo-home">
+     Autos Destacados
+   </h2>
+ </div>
+  <section class="container-fluid">
+    <div class="row bg-autos">
+        <div class="col-xs-4 col-md-4 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+                <img src="img/peugeot.jpeg" class="card-img-top" alt="peugeot">
+                <div class="card-body">
+                  <h2 class="card-title fs-4 text">Peugeot 208</h2>
+                  <p class="card-text">Peugeot 208 Feline Pack Cuir 
+                    Modelo 2014
+                    112.000km</p>
+                  <a href="#" class="btn btn-danger">Consultar</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-xs-4 col-md-4 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+                <img src="img/volkswagen.jpeg" class="card-img-top" alt="volkswagenpolo">
+                <div class="card-body">
+                  <h2 class="card-title fs-4 text">Volkswagen Polo</h2>
+                  <p class="card-text">Volkswagen Polo 2500 Highline
+                    Modelo 2018
+                    30.000km</p>
+                  <a href="#" class="btn btn-danger">Consultar</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-xs-4 col-md-4 col-lg-4 d-flex justify-content-center">
+              <div class="card">
+                <img src="img/volkswagen1.jpeg" class="card-img-top" alt="volkswagentrend">
+                <div class="card-body">
+                  <h2 class="card-title fs-4 text">Volkswagen Trend</h2>
+                  <p class="card-text">Volkswagen Gol Trend 1.6 nafta
+                    Modelo 2015
+                    78.000km</p>
+                  <a href="#" class="btn btn-danger">Consultar</a>
+                </div>
+              </div>
+        </div>
+    </div>
+  </section>
+ <footer class="contenedor-footer">
+  <div class="icono">
+    <i class="fa-brands fa-instagram icono1"></i>
+    <i class="fa-brands fa-tiktok icono1"></i>
+    <i class="fa-brands fa-facebook icono1"></i>
+  </div>
+  <p class="p-footer">
+    <strong class="s-footer"> ©TOMASAUTOS.</strong> Todos los derechos reservados.
+  </p>
+ </footer>
+  <a href="https://api.whatsapp.com/send?phone=2284537622" class="btn-wsp" target="_blank">
+    <i class="fa-brands fa-whatsapp icono-wsp"></i>
+  </a>
+     <!--link js-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

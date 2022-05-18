@@ -1,0 +1,85 @@
+/*-------------boton de wsp-------------------*/
+
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgb(10, 201, 10);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index:100 ;
+}
+.btn-wsp:hover{
+    text-decoration:none ;
+    color: rgb(10, 201, 10);
+    background-color: #fff;
+}
+
+/*----------------contenido del html home--------------------*/
+
+.titulo-home{
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(206, 195, 195, 0.199);
+}
+.card-home{
+    width: 14rem;
+}
+.contenedor-home{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-color: #353535;
+    margin: 15px;
+    color: #fff;
+    border-radius: 5px;
+}
+/*----------------card creada con grid----------------------*/
+
+.compra-venta{
+    @include home;
+}
+.mantenimiento{
+    @include home;
+    
+}
+.asesoramiento{
+    @include home;
+}
+.h1-cuadro{
+    font-size: 14px;
+    margin: 10px;
+  
+}
+.compra-venta:hover{
+    background-color:  #723333;
+}
+.asesoramiento:hover{
+    background-color:  #723333;
+}
+.mantenimiento:hover{
+    background-color:  #723333;
+}
+@media only screen and (min-width:760px){
+    .contenedor-home{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 30px;
+    }
+    .h1-cuadro{
+        font-size: 18px;
+    }
+    .compra-venta, .mantenimiento, .asesoramiento{
+        font-size: 25px;
+    }
+    .titulo-home{
+        font-size: 30px;
+    }
+}
